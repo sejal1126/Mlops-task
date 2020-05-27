@@ -1,0 +1,9 @@
+FROM centos:latest
+RUN yum install python36 -y
+RUN pip3 install --upgrade pip
+RUN pip3 install keras
+RUN pip3 install numpy
+RUN pip3 install matplotlib
+RUN pip3 install sklearn
+RUN pip3 install tensorflow
+RUN CMD ["python3","/root/datascience_project/main.py"]
